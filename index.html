@@ -185,7 +185,6 @@
 
   <form action="https://formsubmit.co/liligk@abv.bg" method="POST" style="...">
 
-
     <label for="name">Име:</label><br>
     <input type="text" id="name" name="name" required style="width: 100%; padding: 8px;"><br><br>
 
@@ -193,7 +192,7 @@
     <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;"><br><br>
 
     <label for="message">Съобщение:</label><br>
-    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br><br>
+    <textarea id="message" name="message
 
     <button type="submit" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px;">Изпрати</button>
   </form>
@@ -221,27 +220,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<script>
-  const form = document.querySelector("form");
-  const thanks = document.getElementById("thanks");
-  if (form && thanks) {
-    thanks.style.display = "none";
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-      .then(() => {
-        form.style.display = "none";
-        thanks.style.display = "block";
-      })
-      .catch((error) => alert("Има грешка при изпращането."));
-    });
-  }
-</script>
+
 
 </body>
 </html>
