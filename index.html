@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
+  <meta name="netlify-honeypot" content="bot-field">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>⚖️ Адвокатска кантора Бургас - Сливен | Правен баланс и медиация</title>
@@ -180,12 +181,29 @@
 <!-- Контактна форма -->
 <section id="contact" class="section-img" style="background-image: url('https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&w=1200&q=80');">
   <h2>Свържете се с нас</h2>
-  <form class="contact-form animate" action="mailto:<a href="mailto:liligk@abv.bg">liligk@abv.bg</a>" method="post" enctype="text/plain">
-    <input type="text" name="Име" placeholder="Вашето име" required>
-    <input type="email" name="Email" placeholder="Вашият Email" required>
-    <textarea name="Съобщение" rows="4" placeholder="Вашето съобщение" required></textarea>
-    <button type="submit" class="btn">Изпрати</button>
-  </form>
+  
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden>
+    <label>Не попълвай това поле: <input name="bot-field" /></label>
+  </p>
+
+  <label for="name">Име:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Имейл:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="message">Съобщение:</label><br>
+  <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+  <button type="submit">Изпрати</button>
+</form>
+
+<div id="thanks" style="margin-top: 20px; font-weight: bold; color: green;">
+  Благодарим за запитването! Ще се свържем с Вас възможно най-скоро.
+</div>
+
 </section>
 
 <footer>
