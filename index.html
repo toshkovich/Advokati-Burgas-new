@@ -200,7 +200,7 @@
   <button type="submit">Изпрати</button>
 </form>
 
-<div id="thanks" style="margin-top: 20px; font-weight: bold; color: green;">
+<div id="thanks" style="margin-top: 20px; font-weight: bold; color: green; display: none;">
   Благодарим за запитването! Ще се свържем с Вас възможно най-скоро.
 </div>
 
@@ -222,5 +222,28 @@ document.addEventListener("DOMContentLoaded", function() {
   onScroll();
 });
 </script>
+
+<script>
+  const form = document.querySelector("form");
+  const thanks = document.getElementById("thanks");
+  if (form && thanks) {
+    thanks.style.display = "none";
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+      .then(() => {
+        form.style.display = "none";
+        thanks.style.display = "block";
+      })
+      .catch((error) => alert("Има грешка при изпращането."));
+    });
+  }
+</script>
+
 </body>
 </html>
