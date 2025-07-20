@@ -233,3 +233,10 @@ footer {
     max-width: 98vw;
   }
 }
+/* Видими етикети във формата */
+form label {
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
