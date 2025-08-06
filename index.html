@@ -4,60 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Адвокатска кантора Бургас - Сливен | Правна защита и медиация</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Адвокатска кантора Бургас - Сливен: правни консултации, представителство пред съд, прокуратура и досъдебни органи, гражданско, наказателно, търговско и семейно право.">
+  <meta name="keywords" content="адвокат Бургас, адвокат Сливен, юридически услуги, съдебна защита, правни консултации">
   <style>
-  .hero-custom {
-    text-align: center;
-    background: linear-gradient(180deg,#f5f8ff 70%,#e4eeff 100%);
-    padding: 70px 20px 55px 20px;
-  }
-  .hero-custom .hero-text h1 {
-    font-size: 2.1em;
-    font-weight: 700;
-    color: #1e2955;
-    letter-spacing: 0.01em;
-    margin-bottom: 0.3em;
-  }
-  .hero-custom .hero-text .desc {
-    display: block;
-    font-size: 1.18em;
-    margin-bottom: 1.6em;
-    color: #4762a1;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-  }
-  .scales-animation {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 340px;
-  }
-  /* Допълнителен стил за по-"яка" анимация */
-  .scales-floating {
-    animation: floatScales 3.5s ease-in-out infinite;
-    transform-origin: 180px 80px;
-  }
-  @keyframes floatScales {
-    0% { transform: translateY(0) rotate(-8deg);}
-    25% { transform: translateY(-8px) rotate(-3deg);}
-    50% { transform: translateY(-15px) rotate(8deg);}
-    75% { transform: translateY(-8px) rotate(-3deg);}
-    100% { transform: translateY(0) rotate(-8deg);}
-  }
-  @media (max-width: 600px) {
+    body {font-family:sans-serif;background:#f5f8ff;margin:0;color:#223;line-height:1.6;}
+    header, section, footer {max-width:900px;margin:0 auto;}
     .hero-custom {
-      padding: 35px 5px 25px 5px;
+      text-align: center;
+      background: linear-gradient(180deg,#f5f8ff 70%,#e4eeff 100%);
+      padding: 70px 20px 55px 20px;
     }
     .hero-custom .hero-text h1 {
+      font-size: 2.1em;
+      font-weight: 700;
+      color: #1e2955;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.3em;
+    }
+    .hero-custom .hero-text .desc {
+      display: block;
       font-size: 1.18em;
+      margin-bottom: 1.6em;
+      color: #4762a1;
+      font-weight: 500;
+      letter-spacing: 0.02em;
     }
-    .scales-animation {
-      max-width: 98vw;
+    .scales-animation {margin:0 auto;width:100%;max-width:340px;}
+    .scales-floating {
+      animation: floatScales 3.5s ease-in-out infinite;
+      transform-origin: 180px 80px;
     }
-  }
+    @keyframes floatScales {
+      0% { transform: translateY(0) rotate(-8deg);}
+      25% { transform: translateY(-8px) rotate(-3deg);}
+      50% { transform: translateY(-15px) rotate(8deg);}
+      75% { transform: translateY(-8px) rotate(-3deg);}
+      100% { transform: translateY(0) rotate(-8deg);}
+    }
+    nav {background:#4762a1;color:#fff;padding:0.5em 0;}
+    nav ul {list-style:none;display:flex;justify-content:center;gap:2em;margin:0;padding:0;}
+    nav a {color:#fff;text-decoration:none;font-weight:600;font-size:1.1em;}
+    nav a:hover {text-decoration:underline;}
+    section {background:#fff;border-radius:10px;padding:30px 18px;margin:24px 0;box-shadow:0 2px 12px #e7e7f333;}
+    h2 {color:#4762a1;margin-top:0;}
+    .services-list {display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;margin:30px 0 0 0;}
+    .service-card {background:#f5f8ff;border-radius:8px;padding:20px 16px;box-shadow:0 2px 8px #e4eeff77;}
+    .service-card h3 {margin-top:0;color:#223;font-size:1.17em;}
+    .contact-block {text-align:center;}
+    .contact-block a {color:#4762a1;text-decoration:none;font-weight:600;}
+    footer {text-align:center;color:#777;padding:25px 10px 18px 10px;font-size:1em;margin-top:30px;}
+    @media (max-width:600px) {
+      .hero-custom {padding:35px 5px 25px 5px;}
+      .hero-custom .hero-text h1 {font-size:1.18em;}
+      .scales-animation {max-width:98vw;}
+      nav ul {gap:1em;}
+    }
   </style>
 </head>
 <body>
-  <!-- Начален блок с вашето име и яка анимирана везна -->
+  <!-- Начален блок -->
   <section class="hero-custom">
     <div class="hero-text">
       <h1>Адвокатска кантора Бургас - Сливен</h1>
@@ -66,9 +71,8 @@
       </span>
     </div>
     <div class="scales-animation">
-      <!-- SVG анимация: яка, стилна, плаваща и люлееща се везна -->
+      <!-- SVG анимирана везна -->
       <svg viewBox="0 0 360 180" width="300" height="140" style="display:block;margin:0 auto;">
-        <!-- Вълна (анимирана) -->
         <path id="wave" fill="#b3c6ff">
           <animate attributeName="d"
             dur="3s"
@@ -80,14 +84,10 @@
             "
           />
         </path>
-        <!-- Везни (група с яка люлееща и плаваща анимация) -->
         <g class="scales-floating">
-          <!-- Централен стълб -->
           <rect x="173" y="40" width="14" height="60" rx="7" fill="#1e2955"/>
-          <!-- Горна греда със златист отблясък -->
           <rect x="150" y="60" width="60" height="8" rx="4" fill="#ffd700" stroke="#4762a1" stroke-width="1"/>
           <ellipse cx="180" cy="64" rx="8" ry="4" fill="#ffe399" opacity="0.8"/>
-          <!-- Лява верига + чинийка с допълнителна анимация -->
           <g>
             <line x1="155" y1="64" x2="140" y2="100" stroke="#888" stroke-width="2"/>
             <ellipse cx="140" cy="108" rx="17" ry="7" fill="#ffe399">
@@ -95,7 +95,6 @@
             </ellipse>
             <ellipse cx="140" cy="108" rx="10" ry="3" fill="#ffd700" opacity="0.55"/>
           </g>
-          <!-- Дясна верига + чинийка с противоположна анимация -->
           <g>
             <line x1="205" y1="64" x2="220" y2="100" stroke="#888" stroke-width="2"/>
             <ellipse cx="220" cy="108" rx="17" ry="7" fill="#ffe399">
@@ -103,17 +102,78 @@
             </ellipse>
             <ellipse cx="220" cy="108" rx="10" ry="3" fill="#ffd700" opacity="0.55"/>
           </g>
-          <!-- Лек отблясък за усещане за движение -->
           <ellipse cx="180" cy="130" rx="70" ry="13" fill="#e0e7ff" opacity="0.35">
             <animate attributeName="rx" values="70;83;70" dur="3s" repeatCount="indefinite"/>
           </ellipse>
-          <!-- Лека сянка под везните -->
           <ellipse cx="180" cy="140" rx="50" ry="8" fill="#b1b8cc" opacity="0.19"/>
         </g>
       </svg>
     </div>
   </section>
 
-  <!-- Тук добави останалото си съдържание: услуги, екип, контакти и т.н. -->
+  <!-- Меню -->
+  <nav>
+    <ul>
+      <li><a href="#about">За нас</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#contacts">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <!-- За нас -->
+  <section id="about">
+    <h2>За нас</h2>
+    <p>
+      Адвокатска кантора Бургас – Сливен предлага професионални правни консултации и съдебна защита за граждани, фирми и организации. Нашият екип е с богат опит в областта на наказателното, гражданското, търговското и семейното право. Работим с индивидуален подход към всеки клиент – дискретно, коректно и с грижа за Вашия интерес.
+    </p>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services">
+    <h2>Нашите услуги</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <h3>Наказателно право</h3>
+        <p>Защита по наказателни дела, жалби и съдействие при досъдебни органи.</p>
+      </div>
+      <div class="service-card">
+        <h3>Гражданско право</h3>
+        <p>Договори, обезщетения, вещни спорове, делба, наследства, имоти.</p>
+      </div>
+      <div class="service-card">
+        <h3>Търговско право</h3>
+        <p>Регистрация и преобразуване на фирми, търговски спорове, несъстоятелност.</p>
+      </div>
+      <div class="service-card">
+        <h3>Семейно и наследствено право</h3>
+        <p>Развод, издръжка, родителски права, наследство, доброволни споразумения.</p>
+      </div>
+      <div class="service-card">
+        <h3>Медиация и извънсъдебно решаване</h3>
+        <p>Мирно уреждане на спорове чрез сертифициран медиатор.</p>
+      </div>
+      <div class="service-card">
+        <h3>Консултации и процесуално представителство</h3>
+        <p>Пълно съдействие и защита пред съд, прокуратура и досъдебни органи.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакти -->
+  <section id="contacts" class="contact-block">
+    <h2>Контакти</h2>
+    <p>
+      <strong>Телефон:</strong> <a href="tel:+359888123456">+359 888 123 456</a><br>
+      <strong>Имейл:</strong> <a href="mailto:office@advokatiburgas-sliven.bg">office@advokatiburgas-sliven.bg</a><br>
+      <strong>Адрес:</strong> гр. Бургас и гр. Сливен (по предварителна уговорка)
+    </p>
+    <p>
+      <em>Свържете се с нас за индивидуална консултация или запитване по Вашия казус!</em>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Адвокатска кантора Бургас – Сливен. Всички права запазени.
+  </footer>
 </body>
 </html>
