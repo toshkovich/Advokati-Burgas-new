@@ -1,293 +1,212 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f8fafd;
-  color: #23313c;
-}
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>⚖️ Адвокатска кантора Бургас - Сливен | Правна защита и медиация</title>
+  <meta name="description" content="Адвокатска кантора Бургас - Сливен: гражданско и наказателно право, медиация, сделки с имоти, трудово право, семейно и наследствено право, консултации, представителство.">
+  <meta name="keywords" content="адвокат Бургас, адвокат Сливен, медиация, гражданско право, сделки с имоти, трудово право, наследствено право, КАТ, адвокатска кантора">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Хедър и CTA -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>⚖️ Адвокатска кантора Бургас - Сливен</h1>
+      <p>Вашият доверен партньор за правна защита и медиация</p>
+      <a href="#contact" class="btn-consult">Бърза консултация</a>
+      <nav class="main-nav">
+        <a href="#services">Услуги</a>
+        <a href="#mediation">Медиация</a>
+        <a href="#team">Екип</a>
+        <a href="#offices">Контакти</a>
+      </nav>
+    </div>
+  </header>
 
-.hero {
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.hero-overlay {
-  background: rgba(0, 42, 85, 0.65);
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 20px;
-}
-.main-nav {
-  margin: 18px 0 8px 0;
-}
-.main-nav a {
-  color: #f9d923;
-  font-weight: bold;
-  text-decoration: none;
-  margin: 0 12px;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-.main-nav a:hover {
-  color: #fff;
-}
-.hero .btn {
-  margin-top: 20px;
-  padding: 12px 32px;
-  background: #f9d923;
-  color: #002a55;
-  border: none;
-  border-radius: 24px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: background 0.3s;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-.hero .btn:hover {
-  background: #fbbf24;
-}
+  <!-- Кратко приветствие -->
+  <section class="welcome">
+    <p>
+      Добре дошли в Адвокатска кантора Бургас – Сливен.<br>
+      Предлагаме професионални правни услуги и медиация в Бургас, Сливен и региона. Нашият екип е готов да Ви съдейства при всякакви правни казуси – бързо, дискретно и ефективно.
+    </p>
+  </section>
 
-.section-bg {
-  background: linear-gradient(90deg, #e5f3fd 0%, #f9f9f9 100%);
-  padding: 50px 0 30px 0;
-  margin-bottom: 0;
-}
-.section-img {
-  background-size: cover;
-  background-position: center;
-  padding: 50px 0 30px 0;
-  color: #fff;
-  position: relative;
-}
-.section-img::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 42, 85, 0.85);
-  z-index: 1;
-}
-.section-img > * {
-  position: relative;
-  z-index: 2;
-}
+  <!-- Услуги -->
+  <section id="services" class="section-bg">
+    <h2>Нашите услуги</h2>
+    <div class="services-list">
+      <div class="service-card animate">
+        <i class="fa fa-balance-scale"></i>
+        <h4>Гражданско и наказателно право</h4>
+        <p>Консултации и процесуална защита по граждански и наказателни дела.</p>
+      </div>
+      <div class="service-card animate">
+        <i class="fa fa-car"></i>
+        <h4>Обжалване на актове (КАТ)</h4>
+        <p>Обжалване на актове и наказателни постановления, свързани с пътнотранспортни нарушения.</p>
+      </div>
+      <div class="service-card animate">
+        <i class="fa fa-home"></i>
+        <h4>Сделки с недвижими имоти</h4>
+        <p>Правен анализ, подготовка и изповядване на сделки с имоти.</p>
+      </div>
+      <div class="service-card animate">
+        <i class="fa fa-briefcase"></i>
+        <h4>Трудово и осигурително право</h4>
+        <p>Консултации и защита на служители и работодатели при трудови спорове.</p>
+      </div>
+      <div class="service-card animate">
+        <i class="fa fa-people-roof"></i>
+        <h4>Семейно и наследствено право</h4>
+        <p>Разводи, издръжки, наследства, делби.</p>
+      </div>
+      <div class="service-card animate">
+        <i class="fa fa-file-contract"></i>
+        <h4>Договори и представителство</h4>
+        <p>Изготвяне, преглед и консултиране на договори. Представителство пред съд и институции.</p>
+      </div>
+      <div class="service-card animate">
+        <i class="fa fa-gavel"></i>
+        <h4>Съдебна делба</h4>
+        <p>Съдействие при делба на имоти и наследства в Бургас и Сливен.</p>
+      </div>
+    </div>
+  </section>
 
-h2 { text-align: center; margin-bottom: 30px; }
-.team-cards, .services-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.card, .service-card {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(30, 42, 75, 0.08);
-  padding: 28px 22px;
-  min-width: 220px;
-  max-width: 300px;
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-align: center;
-  position: relative;
-}
-.card:hover, .service-card:hover, .office-card:hover {
-  transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 8px 32px rgba(30, 42, 75, 0.16);
-}
-.service-card i {
-  font-size: 2.2rem;
-  color: #f9d923;
-  margin-bottom: 14px;
-  display: block;
-}
+  <!-- Медиация -->
+  <section id="mediation" class="section-img" style="background-image: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80');">
+    <h2>Медиация</h2>
+    <div class="mediation-content animate">
+      <p>
+        Медиацията е бърз, поверителен и по-достъпен начин за решаване на спорове извън съда.<br>
+        Подходяща е за: семейни, имуществени, търговски и трудови конфликти.<br>
+        Нашите медиатори ще Ви помогнат да намерите най-доброто решение и да спестите време и средства.
+      </p>
+    </div>
+  </section>
 
-.animate {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s, transform 0.8s;
-}
-.animate.visible {
-  opacity: 1;
-  transform: none;
-}
+  <!-- Правни сентенции -->
+  <section class="section-bg">
+    <h2>Правни сентенции</h2>
+    <div class="quotes animate">
+      <blockquote>„Всяка собственост има граници, определени от закона.“</blockquote>
+      <blockquote>„Сделката без знание е като къща без основи.“</blockquote>
+    </div>
+  </section>
 
-.offices-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
-  justify-content: center;
-  margin-top: 24px;
-}
-.office-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(30, 42, 75, 0.10);
-  padding: 24px 20px;
-  min-width: 300px;
-  max-width: 400px;
-  flex: 1 1 320px;
-  text-align: left;
-  position: relative;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-.office-card h3 {
-  color: #002a55;
-  margin-top: 0;
-}
-.gmap {
-  margin-top: 14px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-}
-.btn-map {
-  display: inline-block;
-  margin-top: 14px;
-  background: #f9d923;
-  color: #002a55;
-  border: none;
-  border-radius: 22px;
-  padding: 8px 22px;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.btn-map:hover {
-  background: #fbbf24;
-  color: #002a55;
-}
+  <!-- Екип -->
+  <section id="team" class="section-bg">
+    <h2>Екип</h2>
+    <div class="team-group">
+      <h3>Адвокати</h3>
+      <div class="team-cards">
+        <div class="card animate">
+          <h3>адв. Милен Калоянов</h3>
+          <p>Адвокат, Бургас и Сливен</p>
+          <p><a href="tel:+359889360490">+359 88 936 0490</a></p>
+          <p><a href="mailto:mkaloianov@abv.bg">mkaloianov@abv.bg</a></p>
+        </div>
+        <div class="card animate">
+          <h3>адв. Елена Попова</h3>
+          <p>Адвокат, Бургас и Сливен</p>
+          <p><a href="tel:+359888848477">+359 888 848 477</a></p>
+          <p><a href="mailto:elepopova@abv.bg">elepopova@abv.bg</a></p>
+        </div>
+        <div class="card animate">
+          <h3>адв. Светла Петрова</h3>
+          <p>Адвокат, Бургас и Сливен</p>
+          <p><a href="tel:+359888201387">0888 201 387</a></p>
+          <p><a href="mailto:svetla7007@abv.bg">svetla7007@abv.bg</a></p>
+        </div>
+      </div>
+      <h3>Юристи и медиатори</h3>
+      <div class="team-cards">
+        <div class="card animate">
+          <h4>Стефан Йорданов</h4>
+          <p>Юрист-медиатор, Сливен и Бургас</p>
+          <p><a href="tel:+359877274808">0877 274 808</a></p>
+        </div>
+        <div class="card animate">
+          <h4>Лилия Георгиева</h4>
+          <p>Юрист-медиатор, Сливен и Бургас</p>
+          <p><a href="tel:+359884718108">0884 718 108</a></p>
+          <p><a href="mailto:liligk@abv.bg">liligk@abv.bg</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.contact-form {
-  max-width: 420px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  background: rgba(255,255,255,0.12);
-  padding: 28px 20px;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-}
-.contact-form input, .contact-form textarea {
-  border: none;
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 1rem;
-  color: #23313c;
-  background: #f8fafd;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-  outline: none;
-}
-.contact-form button {
-  background: #f9d923;
-  color: #002a55;
-  border: none;
-  border-radius: 22px;
-  padding: 10px 24px;
-  font-weight: bold;
-  font-size: 1.05rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.contact-form button:hover {
-  background: #fbbf24;
-}
+  <!-- Контакти и офиси -->
+  <section id="offices" class="section-bg">
+    <h2>Контакти</h2>
+    <div class="offices-wrapper">
+      <div class="office-card animate">
+        <h3>Офис Бургас</h3>
+        <p><b>Адрес:</b> ул. Св. Патриарх Евтимий 21, Бургас</p>
+        <p><b>Лице за контакт:</b> Лилия Георгиева</p>
+        <p><b>Телефон:</b> <a href="tel:+359884718108">0884 718 108</a></p>
+        <p><b>Имейл:</b> <a href="mailto:liligk@abv.bg">liligk@abv.bg</a></p>
+        <div class="gmap">
+          <iframe 
+            style="pointer-events:auto; border:0;" 
+            src="https://www.google.com/maps?q=42.494686,27.469272&z=16&output=embed" 
+            width="100%" height="220" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <a class="btn-map" href="https://www.google.com/maps?q=ул.+Св.+Патриарх+Евтимий+21,+Бургас" target="_blank">
+          <i class="fa fa-map-location-dot"></i> Виж на картата
+        </a>
+      </div>
+      <div class="office-card animate">
+        <h3>Офис Сливен</h3>
+        <p><b>Адрес:</b> ул. Г.С. Раковски 15, офис 11, Сливен</p>
+        <p><b>Лице за контакт:</b> Елена Попова</p>
+        <p><b>Телефон:</b> <a href="tel:+359888848477">+359 888 848 477</a></p>
+        <p><b>Имейл:</b> <a href="mailto:elepopova@abv.bg">elepopova@abv.bg</a></p>
+        <div class="gmap">
+          <iframe 
+            style="pointer-events:auto; border:0;" 
+            src="https://www.google.com/maps?q=42.681168,26.323663&z=16&output=embed" 
+            width="100%" height="220" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <a class="btn-map" href="https://www.google.com/maps?q=ул.+Г.С.+Раковски+15,+Сливен" target="_blank">
+          <i class="fa fa-map-location-dot"></i> Виж на картата
+        </a>
+      </div>
+    </div>
+  </section>
 
-.quotes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-}
-.quotes blockquote {
-  font-style: italic;
-  background: #e4edfa;
-  padding: 18px 20px;
-  border-radius: 12px;
-  color: #002a55;
-  max-width: 450px;
-  box-shadow: 0 2px 8px rgba(0,42,85,0.04);
-}
+  <!-- Форма за контакт -->
+  <section id="contact" class="section-img" style="background-image: url('https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&w=1200&q=80'); padding: 40px 20px;">
+    <h2 style="color: white; text-align: center;">Свържете се с нас</h2>
+    <form action="https://formsubmit.co/liligk@abv.bg" method="POST"
+      style="max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.95); padding: 20px; border-radius: 10px;">
+      <label for="name">Име:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Имейл:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Съобщение:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Изпрати</button>
+    </form>
+  </section>
 
-footer {
-  background: #002a55;
-  color: #fff;
-  text-align: center;
-  padding: 18px 0 10px 0;
-  margin-top: 0;
-  font-size: 0.98rem;
-}
+  <footer>
+    <p>&copy; 2025 Адвокатска кантора Бургас - Сливен. Всички права запазени.</p>
+  </footer>
 
-@media (max-width: 900px) {
-  .team-cards, .services-list, .offices-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card, .service-card, .office-card {
-    max-width: 98vw;
-  }
-}
-/* Видими етикети във формата */
-form label {
-  color: #333;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-}
-/* --- Мобилен изглед и overlay за .hero --- */
-.hero {
-  background: linear-gradient(to bottom, rgba(0,42,85,0.7), rgba(0,42,85,0.7)),
-              url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hero-overlay {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 40px 20px;
-  border-radius: 20px;
-  text-align: center;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-/* Мобилен адаптивен изглед */
-@media (max-width: 768px) {
-  .hero {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero .btn {
-    font-size: 1rem;
-    padding: 10px 24px;
-    margin-top: 12px;
-  }
-}
-
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function onScroll() {
+      document.querySelectorAll('.animate').forEach(el => {
+        let rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50) el.classList.add('visible');
+      });
+    }
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  });
+  </script>
+</body>
+</html>
