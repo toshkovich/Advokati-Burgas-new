@@ -1,0 +1,17 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#002a55"/>
+  <g fill="#f9d923" stroke="#f9d923" stroke-width="0.8">
+    <!-- Central pillar -->
+    <line x1="16" y1="6" x2="16" y2="26"/>
+    <!-- Horizontal beam -->
+    <line x1="8" y1="12" x2="24" y2="12"/>
+    <!-- Left scale -->
+    <circle cx="10" cy="12" r="2.5" fill="none" stroke-width="0.6"/>
+    <line x1="7.5" y1="14.5" x2="12.5" y2="14.5" stroke-width="0.6"/>
+    <!-- Right scale -->
+    <circle cx="22" cy="12" r="2.5" fill="none" stroke-width="0.6"/>
+    <line x1="19.5" y1="14.5" x2="24.5" y2="14.5" stroke-width="0.6"/>
+    <!-- Base -->
+    <rect x="12" y="24" width="8" height="2" rx="1"/>
+  </g>
+</svg>
