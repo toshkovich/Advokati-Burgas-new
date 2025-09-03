@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /thank-you.html
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://advokati-burgas-sliven.bg/sitemap.xml
+
+# Disallow common non-content files
+Disallow: /*.ico$
+Disallow: /*.png$
+Disallow: /*.svg$
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Allow specific important images
+Allow: /apple-touch-icon.png
+Allow: /favicon-192.png
