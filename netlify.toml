@@ -1,0 +1,14 @@
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/share-1200x630.png"
+  [headers.values]
+    Cache-Control = "max-age=86400"
+
+[[headers]]
+  for = "/share-1200x1200.png"
+  [headers.values]
+    Cache-Control = "max-age=86400"
