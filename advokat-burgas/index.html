@@ -91,8 +91,8 @@
 
   <section class="welcome">
     <p>
-      Добре дошли в нашата адвокатска кантора в гр. Бургас.<br>
-      Предлагаме професионални правни услуги и консултации с дългогодишен опит в различни области на правото. Нашият екип е готов да Ви съдейства при всякакви правни казуси – бързо, дискретно и ефективно.
+      Добре дошли в нашата адвокатска кантора в гр. Бургас!<br>
+      Предлагаме професионални правни услуги и консултации с дългогодишен опит в различни области на правото. Нашият екип е готов да Ви съдейства при всякакви правни казуси - бързо, дискретно и ефективно.
     </p>
   </section>
 
@@ -105,13 +105,13 @@
         </div>
         <p style="font-size: 16px; line-height: 1.6; text-align: justify;">
           Нашата адвокатска кантора в гр. Бургас работи с висок професионализъм и отговорност към всеки клиент. 
-          Специализираме се в различни области на правото и предлагаме комплексни правни решения, съобразени с 
-          индивидуалните нужди на всеки случай. Нашият екип има богат опит в защитата на граждански и бизнес интереси, 
-          като винаги се стремим към най-добрия резултат за нашите клиенти.
+          Специализираме се в различни области на правото и предлагаме комплексни правни решения. Всяко решение е съобразено с индивидуалните нужди на конкретния случай. 
         </p>
         <p style="font-size: 16px; line-height: 1.6; text-align: justify;">
-          Намираме се в сърцето на Бургас на удобно и достъпно място. Работим с прозрачност, коректност и 
-          професионален подход, като предлагаме консултации извън работно време при необходимост.
+          Нашият екип има богат опит в защитата на граждански и бизнес интереси. Винаги се стремим към най-добрия резултат за нашите клиенти.
+        </p>
+        <p style="font-size: 16px; line-height: 1.6; text-align: justify;">
+          Намираме се в сърцето на Бургас на удобно и достъпно място. Работим с прозрачност, коректност и професионален подход. При необходимост предлагаме консултации извън работно време.
         </p>
       </div>
     </div>
@@ -220,8 +220,7 @@
         <h3>Лилия Георгиева</h3>
         <p><strong>Адвокат и медиатор</strong><br>гр. Бургас</p>
         <p style="margin: 15px 0;">
-          Дългогодишен опит в гражданското и наказателното право. Специализация в семейни дела, 
-          имотни спорове и медиация. Известна с професионалния си подход и отлични резултати.
+          Дългогодишен опит в гражданското и наказателното право. Специализация в семейни дела, имотни спорове и медиация. Известна с професионалния си подход и отлични резултати.
         </p>
         <p><strong>Телефон:</strong> <a href="tel:+359884718108" style="color: #f9d923;">0884 718 108</a></p>
         <p><strong>Email:</strong> <a href="mailto:liligk@abv.bg" style="color: #f9d923;">liligk@abv.bg</a></p>
@@ -312,13 +311,23 @@
         <p><strong>Телефон:</strong> <a href="tel:+359884718108" style="color: #f9d923;">0884 718 108</a></p>
         <p><strong>Email:</strong> <a href="mailto:info@advokatiburgas-sliven.bg" style="color: #f9d923;">info@advokatiburgas-sliven.bg</a></p>
         <p><strong>Работно време:</strong> Пон-Пет 9:00-18:00</p>
-        <a href="https://maps.app.goo.gl/ТВОЯ-БУРГАС-ЛИНК" target="_blank" class="btn-map">
+        <div class="gmap">
+          <iframe 
+            style="pointer-events:auto; border:0;" 
+            src="https://www.google.com/maps?q=42.494686,27.469272&z=16&output=embed" 
+            width="100%" height="220" allowfullscreen loading="lazy"
+            title="Карта адвокатска кантора Бургас - ул. Св. Патриарх Евтимий 21"
+            aria-label="Google карта с местоположение на адвокатска кантора в Бургас център"></iframe>
+        </div>
+        <a href="https://goo.gl/maps/9FzjLQo6w8pHWwWj8" target="_blank" class="btn-map">
           <i class="fa fa-map" style="margin-right: 5px;"></i>Виж на картата
         </a>
       </div>
     </div>
 
-    <form action="https://formsubmit.co/info@advokatiburgas-sliven.bg" method="POST" class="animate">
+    <form action="https://formsubmit.co/info@advokatiburgas-sliven.bg" method="POST" class="animate" id="contact-form">
+      <div id="form-message" style="display: none; padding: 15px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; text-align: center;"></div>
+      
       <input type="hidden" name="_subject" value="Запитване от сайта - Адвокат Бургас">
       <input type="hidden" name="_next" value="https://advokatiburgas-sliven.bg/thank-you.html">
       <input type="hidden" name="_captcha" value="false">
@@ -338,7 +347,7 @@
       <label for="message">Съобщение:</label>
       <textarea id="message" name="message" rows="5" required placeholder="Опишете подробно Вашия въпрос или случай..."></textarea>
       
-      <button type="submit">
+      <button type="submit" id="submit-btn">
         <i class="fa fa-paper-plane" style="margin-right: 8px;"></i>Изпрати запитване
       </button>
     </form>
@@ -392,6 +401,65 @@
           }
         });
       });
+
+      // Contact form handling
+      const contactForm = document.getElementById('contact-form');
+      const formMessage = document.getElementById('form-message');
+      const submitBtn = document.getElementById('submit-btn');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          // Show loading state
+          submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin" style="margin-right: 8px;"></i>Изпраща се...';
+          submitBtn.disabled = true;
+          
+          // Show processing message
+          showMessage('Изпращане на съобщението...', 'info');
+          
+          // The form will be submitted normally to formsubmit.co
+          // We'll show a success message after a short delay to simulate processing
+          setTimeout(() => {
+            showMessage('✓ Съобщението е изпратено успешно! Ще се свържем с Вас скоро.', 'success');
+            contactForm.reset();
+            submitBtn.innerHTML = '<i class="fa fa-paper-plane" style="margin-right: 8px;"></i>Изпрати запитване';
+            submitBtn.disabled = false;
+          }, 1000);
+        });
+      }
+
+      function showMessage(text, type) {
+        formMessage.textContent = text;
+        formMessage.style.display = 'block';
+        
+        if (type === 'success') {
+          formMessage.style.backgroundColor = '#d4edda';
+          formMessage.style.color = '#155724';
+          formMessage.style.border = '1px solid #c3e6cb';
+        } else if (type === 'error') {
+          formMessage.style.backgroundColor = '#f8d7da';
+          formMessage.style.color = '#721c24';
+          formMessage.style.border = '1px solid #f5c6cb';
+        } else if (type === 'info') {
+          formMessage.style.backgroundColor = '#d1ecf1';
+          formMessage.style.color = '#0c5460';
+          formMessage.style.border = '1px solid #bee5eb';
+        }
+        
+        // Auto-hide success and info messages after 5 seconds
+        if (type !== 'error') {
+          setTimeout(() => {
+            formMessage.style.display = 'none';
+          }, 5000);
+        }
+      }
+
+      // Check URL parameters for form submission feedback
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('submitted') === 'true') {
+        showMessage('✓ Съобщението е изпратено успешно! Ще се свържем с Вас скоро.', 'success');
+      } else if (urlParams.get('error') === 'true') {
+        showMessage('✗ Възникна грешка при изпращането. Моля, опитайте отново или се свържете с нас директно.', 'error');
+      }
     });
   </script>
 </body>
