@@ -256,7 +256,7 @@ h2 { text-align: center; margin-bottom: 30px; }
 }
 .btn-map {
   display: block;
-  margin: 14px auto 0 auto;
+  margin: 14px auto 0;
   background: #f9d923;
   color: #002a55;
   border: none;
